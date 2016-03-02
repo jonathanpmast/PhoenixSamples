@@ -1,8 +1,13 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
+using PhoenixSample.PCL.Monogame.Aspects;
+using PhoenixSample.PCL.Systems;
+using PhoenixSystem.Engine.Channel;
+using PhoenixSystem.Engine.Collections;
+using PhoenixSystem.Engine.Entity;
 
-namespace PhoenixSample.Windows
+namespace PhoenixSample.PCL
 {
     /// <summary>
     /// This is the main type for your game.
@@ -11,11 +16,16 @@ namespace PhoenixSample.Windows
     {
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
-
+        SampleGameManager _gameManager;
+        SpriteFont font;
+        IChannelManager _channelManager;
         public Game()
         {
             graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
+            _channelManager = new ChannelManager();
+            var entityManager = new EntityManager(_channelManager, new EntityPool());
+            _gameManager = new SampleGameManager(new DefaultEntityAspectManager(_channelManager, entityManager), entityManager, _channelManager);
         }
 
         /// <summary>
@@ -40,7 +50,14 @@ namespace PhoenixSample.Windows
             // Create a new SpriteBatch, which can be used to draw textures.
             spriteBatch = new SpriteBatch(GraphicsDevice);
 
-            // TODO: use this.Content to load your game content here
+            font = Content.Load<SpriteFont>("Status");
+
+            TextRenderSystem textRenderSystem = new TextRenderSystem(spriteBatch, _channelManager, 50, "default");
+            _gameManager.AddSystem(textRenderSystem);
+
+            var te = _gameManager.EntityManager.Get("text", new string[] { "default" });
+            te.CreateTextRenderEntity("Some Text", Color.Black, new Vector2(100, 100), 5, 1.0f, font);
+            _gameManager.AddEntity(te);
         }
 
         /// <summary>
@@ -62,7 +79,7 @@ namespace PhoenixSample.Windows
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
                 Exit();
 
-            // TODO: Add your update logic here
+            _gameManager.Update(new MonogameTickEvent() { GameTime = gameTime });
 
             base.Update(gameTime);
         }
@@ -74,9 +91,9 @@ namespace PhoenixSample.Windows
         protected override void Draw(GameTime gameTime)
         {
             GraphicsDevice.Clear(Color.CornflowerBlue);
-
-            // TODO: Add your drawing code here
-
+            spriteBatch.Begin(SpriteSortMode.Deferred);
+            _gameManager.Draw(new MonogameTickEvent() { GameTime = gameTime });
+            spriteBatch.End();
             base.Draw(gameTime);
         }
     }
