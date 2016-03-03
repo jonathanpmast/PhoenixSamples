@@ -37,7 +37,7 @@ namespace PhoenixSample.PCL.Systems
             {
                 var font = aspect.GetComponent<SpriteFontComponent>().Font;
                 var text = aspect.GetComponent<StringComponent>().Text;
-                var pos = aspect.GetComponent<PositionComponent>().Vector;
+                var pos = aspect.GetComponent<PositionComponent>().CurrentPosition;
                 var color = aspect.GetComponent<ColorComponent>().Color ?? Color.Black;
                 var scale = aspect.GetComponent<ScaleComponent>().Factor;
                 var layerDepth = aspect.GetComponent<RenderLayerComponent>().Depth;

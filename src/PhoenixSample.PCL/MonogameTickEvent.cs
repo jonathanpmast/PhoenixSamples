@@ -8,8 +8,14 @@ using System.Threading.Tasks;
 
 namespace PhoenixSample.PCL
 {
-    public class MonogameTickEvent : ITickEvent
+    public class MonogameTickEvent : GameTime, ITickEvent
     {
-        public GameTime GameTime { get; set; }
+        public MonogameTickEvent(GameTime gameTime) : base()
+        {
+            TotalGameTime = gameTime.TotalGameTime;
+            ElapsedGameTime = gameTime.ElapsedGameTime;
+            IsRunningSlowly = gameTime.IsRunningSlowly;
+            
+        }
     }
 }

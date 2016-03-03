@@ -2,6 +2,7 @@
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using PhoenixSample.PCL.Monogame.Aspects;
+using PhoenixSample.PCL.Monogame.Components;
 using PhoenixSample.PCL.Systems;
 using PhoenixSystem.Engine.Channel;
 using PhoenixSystem.Engine.Collections;
@@ -52,12 +53,17 @@ namespace PhoenixSample.PCL
 
             font = Content.Load<SpriteFont>("Status");
 
-            TextRenderSystem textRenderSystem = new TextRenderSystem(spriteBatch, _channelManager, 50, "default");
+            MovementSystem movementSystem = new MovementSystem(_channelManager, 25, new string[] { "default" });
+            TextRenderSystem textRenderSystem = new TextRenderSystem(spriteBatch, _channelManager, 100, "default");
             _gameManager.AddSystem(textRenderSystem);
+            _gameManager.AddSystem(movementSystem);
 
             var te = _gameManager.EntityManager.Get("text", new string[] { "default" });
             te.CreateTextRenderEntity("Some Text", Color.Black, new Vector2(100, 100), 5, 1.0f, font);
+            var teMove = _gameManager.EntityManager.Get("text2", new string[] { "default" });
+            teMove.CreateTextRenderEntity("I'm Moving!", Color.Black, new Vector2(1, 1), 5, 1.0f, font).AddComponent(new VelocityComponent() { Direction = new Vector2(1, 1), Speed = new Vector2(15, 15) });
             _gameManager.AddEntity(te);
+            _gameManager.AddEntity(teMove);
         }
 
         /// <summary>
@@ -79,7 +85,7 @@ namespace PhoenixSample.PCL
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
                 Exit();
 
-            _gameManager.Update(new MonogameTickEvent() { GameTime = gameTime });
+            _gameManager.Update(new MonogameTickEvent(gameTime));
 
             base.Update(gameTime);
         }
@@ -92,7 +98,7 @@ namespace PhoenixSample.PCL
         {
             GraphicsDevice.Clear(Color.CornflowerBlue);
             spriteBatch.Begin(SpriteSortMode.Deferred);
-            _gameManager.Draw(new MonogameTickEvent() { GameTime = gameTime });
+            _gameManager.Draw(new MonogameTickEvent(gameTime));
             spriteBatch.End();
             base.Draw(gameTime);
         }

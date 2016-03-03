@@ -35,6 +35,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="MonogameTickEvent.cs" />
+    <Compile Include="Monogame\Aspects\MovementAspect.cs" />
     <Compile Include="Monogame\Aspects\TextRenderAspect.cs" />
     <Compile Include="Monogame\Components\ColorComponent.cs" />
     <Compile Include="Monogame\Components\PositionComponent.cs" />
@@ -44,8 +45,10 @@
     <Compile Include="Monogame\Components\SpriteFontComponent.cs" />
     <Compile Include="Monogame\Components\StringComponent.cs" />
     <Compile Include="Game.cs" />
+    <Compile Include="Monogame\Components\VelocityComponent.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SampleGameManager.cs" />
+    <Compile Include="Systems\MovementSystem.cs" />
     <Compile Include="Systems\TextRenderSystem.cs" />
   </ItemGroup>
   <ItemGroup>

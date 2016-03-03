@@ -24,7 +24,7 @@ namespace PhoenixSample.PCL.Monogame.Aspects
         public static IEntity CreateTextRenderEntity(this IEntity entity, string text, Color color, Vector2 position, float layerDepth, float scaleFactor, SpriteFont font)
         {
             return entity.AddComponent(new StringComponent() { Text = text }).AddComponent(new ColorComponent() { Color = color })
-                            .AddComponent(new PositionComponent() { X = position.X, Y = position.Y })
+                            .AddComponent(new PositionComponent() { CurrentPosition = new Vector2(position.X, position.Y) })
                             .AddComponent(new RenderLayerComponent() { Depth = layerDepth }).AddComponent(new ScaleComponent() { Factor = scaleFactor })
                             .AddComponent(new SpriteFontComponent() { Font = font });
         }
