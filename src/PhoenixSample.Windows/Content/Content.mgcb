@@ -1,10 +1,10 @@
 
 #----------------------------- Global Properties ----------------------------#
 
-/outputDir:bin/Windows
+/outputDir:bin/
 /intermediateDir:obj/Windows
 /platform:Windows
-/config:
+/config:Release
 /profile:Reach
 /compress:False
 
@@ -27,7 +27,6 @@
 /processorParam:GenerateMipmaps=False
 /processorParam:PremultiplyAlpha=True
 /processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:GreyGuy/arms/p_arm_idle.png
 
@@ -39,7 +38,6 @@
 /processorParam:GenerateMipmaps=False
 /processorParam:PremultiplyAlpha=True
 /processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:GreyGuy/arms/p_arm_idle_a.png
 
@@ -51,7 +49,6 @@
 /processorParam:GenerateMipmaps=False
 /processorParam:PremultiplyAlpha=True
 /processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:GreyGuy/arms/p_arm_slide_0.png
 
@@ -63,7 +60,6 @@
 /processorParam:GenerateMipmaps=False
 /processorParam:PremultiplyAlpha=True
 /processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:GreyGuy/arms/p_arm_throw_0.png
 
@@ -75,7 +71,6 @@
 /processorParam:GenerateMipmaps=False
 /processorParam:PremultiplyAlpha=True
 /processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:GreyGuy/arms/p_arm_walk.png
 
@@ -87,7 +82,6 @@
 /processorParam:GenerateMipmaps=False
 /processorParam:PremultiplyAlpha=True
 /processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:GreyGuy/arms/p_forarm_idle_0.png
 
@@ -99,7 +93,6 @@
 /processorParam:GenerateMipmaps=False
 /processorParam:PremultiplyAlpha=True
 /processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:GreyGuy/arms/p_forarm_idle_a.png
 
@@ -111,7 +104,6 @@
 /processorParam:GenerateMipmaps=False
 /processorParam:PremultiplyAlpha=True
 /processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:GreyGuy/arms/p_forarm_jump_0.png
 
@@ -123,7 +115,6 @@
 /processorParam:GenerateMipmaps=False
 /processorParam:PremultiplyAlpha=True
 /processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:GreyGuy/arms/p_forarm_side_0.png
 
@@ -135,7 +126,6 @@
 /processorParam:GenerateMipmaps=False
 /processorParam:PremultiplyAlpha=True
 /processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:GreyGuy/arms/p_forarm_under_0.png
 
@@ -147,7 +137,6 @@
 /processorParam:GenerateMipmaps=False
 /processorParam:PremultiplyAlpha=True
 /processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:GreyGuy/arms/p_forarm_walk_a.png
 
@@ -159,7 +148,6 @@
 /processorParam:GenerateMipmaps=False
 /processorParam:PremultiplyAlpha=True
 /processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:GreyGuy/arms/throw_blur_0.png
 
@@ -171,7 +159,6 @@
 /processorParam:GenerateMipmaps=False
 /processorParam:PremultiplyAlpha=True
 /processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:GreyGuy/feet/p_foot_hit_a.png
 
@@ -183,7 +170,6 @@
 /processorParam:GenerateMipmaps=False
 /processorParam:PremultiplyAlpha=True
 /processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:GreyGuy/feet/p_foot_hot_0.png
 
@@ -195,7 +181,6 @@
 /processorParam:GenerateMipmaps=False
 /processorParam:PremultiplyAlpha=True
 /processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:GreyGuy/feet/p_foot_idle_0.png
 
@@ -207,7 +192,6 @@
 /processorParam:GenerateMipmaps=False
 /processorParam:PremultiplyAlpha=True
 /processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:GreyGuy/feet/p_foot_jump_0.png
 
@@ -219,7 +203,6 @@
 /processorParam:GenerateMipmaps=False
 /processorParam:PremultiplyAlpha=True
 /processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:GreyGuy/feet/p_foot_walk_0.png
 
@@ -231,7 +214,6 @@
 /processorParam:GenerateMipmaps=False
 /processorParam:PremultiplyAlpha=True
 /processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:GreyGuy/feet/p_foot_walk_a.png
 
@@ -243,7 +225,6 @@
 /processorParam:GenerateMipmaps=False
 /processorParam:PremultiplyAlpha=True
 /processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:GreyGuy/guns/hand-gun.png
 
@@ -255,7 +236,6 @@
 /processorParam:GenerateMipmaps=False
 /processorParam:PremultiplyAlpha=True
 /processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:GreyGuy/hands/p_hand_1.png
 
@@ -267,7 +247,6 @@
 /processorParam:GenerateMipmaps=False
 /processorParam:PremultiplyAlpha=True
 /processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:GreyGuy/hands/p_hand_2.png
 
@@ -279,7 +258,6 @@
 /processorParam:GenerateMipmaps=False
 /processorParam:PremultiplyAlpha=True
 /processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:GreyGuy/hands/p_hand_a.png
 
@@ -291,7 +269,6 @@
 /processorParam:GenerateMipmaps=False
 /processorParam:PremultiplyAlpha=True
 /processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:GreyGuy/hands/p_hand_a_edge.png
 
@@ -303,7 +280,6 @@
 /processorParam:GenerateMipmaps=False
 /processorParam:PremultiplyAlpha=True
 /processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:GreyGuy/hands/p_hand_b.png
 
@@ -315,7 +291,6 @@
 /processorParam:GenerateMipmaps=False
 /processorParam:PremultiplyAlpha=True
 /processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:GreyGuy/hands/p_hand_c.png
 
@@ -327,7 +302,6 @@
 /processorParam:GenerateMipmaps=False
 /processorParam:PremultiplyAlpha=True
 /processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:GreyGuy/hands/p_hand_edge_0.png
 
@@ -339,7 +313,6 @@
 /processorParam:GenerateMipmaps=False
 /processorParam:PremultiplyAlpha=True
 /processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:GreyGuy/hands/p_hand_float_0.png
 
@@ -351,7 +324,6 @@
 /processorParam:GenerateMipmaps=False
 /processorParam:PremultiplyAlpha=True
 /processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:GreyGuy/hands/p_hand_hang_0.png
 
@@ -363,7 +335,6 @@
 /processorParam:GenerateMipmaps=False
 /processorParam:PremultiplyAlpha=True
 /processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:GreyGuy/hands/p_hand_hang_1.png
 
@@ -375,7 +346,6 @@
 /processorParam:GenerateMipmaps=False
 /processorParam:PremultiplyAlpha=True
 /processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:GreyGuy/hands/p_hand_hang_a.png
 
@@ -387,7 +357,6 @@
 /processorParam:GenerateMipmaps=False
 /processorParam:PremultiplyAlpha=True
 /processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:GreyGuy/hands/p_hand_hit_0.png
 
@@ -399,7 +368,6 @@
 /processorParam:GenerateMipmaps=False
 /processorParam:PremultiplyAlpha=True
 /processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:GreyGuy/hands/p_hand_hit_a.png
 
@@ -411,7 +379,6 @@
 /processorParam:GenerateMipmaps=False
 /processorParam:PremultiplyAlpha=True
 /processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:GreyGuy/hands/p_hand_idle_0.png
 
@@ -423,7 +390,6 @@
 /processorParam:GenerateMipmaps=False
 /processorParam:PremultiplyAlpha=True
 /processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:GreyGuy/hands/p_hand_jump_0.png
 
@@ -435,7 +401,6 @@
 /processorParam:GenerateMipmaps=False
 /processorParam:PremultiplyAlpha=True
 /processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:GreyGuy/hands/p_hand_jump_a.png
 
@@ -447,7 +412,6 @@
 /processorParam:GenerateMipmaps=False
 /processorParam:PremultiplyAlpha=True
 /processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:GreyGuy/hands/p_hand_prepunch_0.png
 
@@ -459,7 +423,6 @@
 /processorParam:GenerateMipmaps=False
 /processorParam:PremultiplyAlpha=True
 /processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:GreyGuy/hands/p_hand_prepunch_x.png
 
@@ -471,7 +434,6 @@
 /processorParam:GenerateMipmaps=False
 /processorParam:PremultiplyAlpha=True
 /processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:GreyGuy/hands/p_hand_punch_0.png
 
@@ -483,7 +445,6 @@
 /processorParam:GenerateMipmaps=False
 /processorParam:PremultiplyAlpha=True
 /processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:GreyGuy/hands/p_hand_push_0.png
 
@@ -495,7 +456,6 @@
 /processorParam:GenerateMipmaps=False
 /processorParam:PremultiplyAlpha=True
 /processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:GreyGuy/hands/p_hand_push_a.png
 
@@ -507,7 +467,6 @@
 /processorParam:GenerateMipmaps=False
 /processorParam:PremultiplyAlpha=True
 /processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:GreyGuy/hands/p_hand_slide_0.png
 
@@ -519,7 +478,6 @@
 /processorParam:GenerateMipmaps=False
 /processorParam:PremultiplyAlpha=True
 /processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:GreyGuy/hands/p_hand_throw_0.png
 
@@ -531,7 +489,6 @@
 /processorParam:GenerateMipmaps=False
 /processorParam:PremultiplyAlpha=True
 /processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:GreyGuy/hands/p_punch_blur.png
 
@@ -543,7 +500,6 @@
 /processorParam:GenerateMipmaps=False
 /processorParam:PremultiplyAlpha=True
 /processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:GreyGuy/head/p_head_blink_0.png
 
@@ -555,7 +511,6 @@
 /processorParam:GenerateMipmaps=False
 /processorParam:PremultiplyAlpha=True
 /processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:GreyGuy/head/p_head_blink_1.png
 
@@ -567,7 +522,6 @@
 /processorParam:GenerateMipmaps=False
 /processorParam:PremultiplyAlpha=True
 /processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:GreyGuy/head/p_head_concern.png
 
@@ -579,7 +533,6 @@
 /processorParam:GenerateMipmaps=False
 /processorParam:PremultiplyAlpha=True
 /processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:GreyGuy/head/p_head_concern_blink_0.png
 
@@ -591,7 +544,6 @@
 /processorParam:GenerateMipmaps=False
 /processorParam:PremultiplyAlpha=True
 /processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:GreyGuy/head/p_head_concern_blink_1.png
 
@@ -603,7 +555,6 @@
 /processorParam:GenerateMipmaps=False
 /processorParam:PremultiplyAlpha=True
 /processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:GreyGuy/head/p_head_die.png
 
@@ -615,7 +566,6 @@
 /processorParam:GenerateMipmaps=False
 /processorParam:PremultiplyAlpha=True
 /processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:GreyGuy/head/p_head_hurt.png
 
@@ -627,7 +577,6 @@
 /processorParam:GenerateMipmaps=False
 /processorParam:PremultiplyAlpha=True
 /processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:GreyGuy/head/p_head_idle.png
 
@@ -639,7 +588,6 @@
 /processorParam:GenerateMipmaps=False
 /processorParam:PremultiplyAlpha=True
 /processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:GreyGuy/head/p_head_idle_blink_0.png
 
@@ -651,7 +599,6 @@
 /processorParam:GenerateMipmaps=False
 /processorParam:PremultiplyAlpha=True
 /processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:GreyGuy/head/p_head_idle_blink_1.png
 
@@ -663,7 +610,6 @@
 /processorParam:GenerateMipmaps=False
 /processorParam:PremultiplyAlpha=True
 /processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:GreyGuy/head/p_head_push.png
 
@@ -675,7 +621,6 @@
 /processorParam:GenerateMipmaps=False
 /processorParam:PremultiplyAlpha=True
 /processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:GreyGuy/head/p_head_turn_0.png
 
@@ -687,7 +632,6 @@
 /processorParam:GenerateMipmaps=False
 /processorParam:PremultiplyAlpha=True
 /processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:GreyGuy/head/p_head_walk.png
 
@@ -699,7 +643,6 @@
 /processorParam:GenerateMipmaps=False
 /processorParam:PremultiplyAlpha=True
 /processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:GreyGuy/legs/p_leg_a.png
 
@@ -711,7 +654,6 @@
 /processorParam:GenerateMipmaps=False
 /processorParam:PremultiplyAlpha=True
 /processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:GreyGuy/legs/p_leg_idle_0.png
 
@@ -723,7 +665,6 @@
 /processorParam:GenerateMipmaps=False
 /processorParam:PremultiplyAlpha=True
 /processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:GreyGuy/legs/p_leg_walk_0.png
 
@@ -735,7 +676,6 @@
 /processorParam:GenerateMipmaps=False
 /processorParam:PremultiplyAlpha=True
 /processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:GreyGuy/legs/p_pelvis_die.png
 
@@ -747,7 +687,6 @@
 /processorParam:GenerateMipmaps=False
 /processorParam:PremultiplyAlpha=True
 /processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:GreyGuy/legs/p_pelvis_idle.png
 
@@ -759,7 +698,6 @@
 /processorParam:GenerateMipmaps=False
 /processorParam:PremultiplyAlpha=True
 /processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:GreyGuy/legs/p_pelvis_walk.png
 
@@ -771,7 +709,6 @@
 /processorParam:GenerateMipmaps=False
 /processorParam:PremultiplyAlpha=True
 /processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:GreyGuy/legs/p_thigh_a.png
 
@@ -783,7 +720,6 @@
 /processorParam:GenerateMipmaps=False
 /processorParam:PremultiplyAlpha=True
 /processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:GreyGuy/legs/p_thigh_idle_0.png
 
@@ -795,7 +731,6 @@
 /processorParam:GenerateMipmaps=False
 /processorParam:PremultiplyAlpha=True
 /processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:GreyGuy/legs/p_thigh_walk_0.png
 
@@ -807,7 +742,6 @@
 /processorParam:GenerateMipmaps=False
 /processorParam:PremultiplyAlpha=True
 /processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:GreyGuy/torso/p_torso_front.png
 
@@ -819,7 +753,6 @@
 /processorParam:GenerateMipmaps=False
 /processorParam:PremultiplyAlpha=True
 /processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:GreyGuy/torso/p_torso_idle.png
 
@@ -831,7 +764,6 @@
 /processorParam:GenerateMipmaps=False
 /processorParam:PremultiplyAlpha=True
 /processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:GreyGuy/torso/p_torso_jump.png
 
@@ -843,7 +775,6 @@
 /processorParam:GenerateMipmaps=False
 /processorParam:PremultiplyAlpha=True
 /processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:GreyGuy/torso/p_torso_punch_0.png
 
@@ -855,7 +786,6 @@
 /processorParam:GenerateMipmaps=False
 /processorParam:PremultiplyAlpha=True
 /processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:GreyGuy/torso/p_torso_walk.png
 
