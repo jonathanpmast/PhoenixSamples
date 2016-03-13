@@ -8,6 +8,6 @@ namespace PhoenixSample.PCL
 {
     public interface IFileReader
     {
-        string GetFileContents(string Path);
+        string[] GetFileContents(string Path);
     }
 }

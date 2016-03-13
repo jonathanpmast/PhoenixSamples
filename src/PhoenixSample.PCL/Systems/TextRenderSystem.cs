@@ -12,6 +12,7 @@ using PhoenixSample.PCL.Monogame.Aspects;
 using Microsoft.Xna.Framework;
 using PhoenixSystem.Engine.Aspect;
 using PhoenixSample.PCL.Monogame.Components;
+using PhoenixSystem.Engine.Extensions;
 
 namespace PhoenixSample.PCL.Systems
 {

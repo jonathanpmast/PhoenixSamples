@@ -10,6 +10,7 @@ using PhoenixSystem.Engine.Channel;
 using PhoenixSample.PCL.Monogame.Aspects;
 using PhoenixSystem.Engine.Aspect;
 using PhoenixSample.PCL.Monogame.Components;
+using PhoenixSystem.Engine.Extensions;
 
 namespace PhoenixSample.PCL.Systems
 {

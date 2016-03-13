@@ -51,14 +51,18 @@
     <Compile Include="SampleGameManager.cs" />
     <Compile Include="Systems\MovementSystem.cs" />
     <Compile Include="Systems\TextRenderSystem.cs" />
+    <Compile Include="TexturePackerLoader\SpriteFrame.cs" />
+    <Compile Include="TexturePackerLoader\SpriteRender.cs" />
+    <Compile Include="TexturePackerLoader\SpriteSheet.cs" />
+    <Compile Include="TexturePackerLoader\SpriteSheetLoader.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="MonoGame.Framework, Version=3.1.2.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\MonoGame.Framework.Portable.3.2.99.1-Beta\lib\portable-net45+win+wpa81+Xamarin.iOS10+MonoAndroid10+MonoTouch10\MonoGame.Framework.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="PhoenixSystem.Engine, Version=0.0.1.13, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\PhoenixSystem.Engine.0.0.1.13\lib\portable-net45+win+wpa81+MonoAndroid10+xamarinios10+MonoTouch10\PhoenixSystem.Engine.dll</HintPath>
+    <Reference Include="PhoenixSystem.Engine, Version=0.0.1.15, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\PhoenixSystem.Engine.0.0.1.15\lib\portable-net45+win+wpa81+MonoAndroid10+xamarinios10+MonoTouch10\PhoenixSystem.Engine.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="SpriterDotNet, Version=1.3.4.6, Culture=neutral, processorArchitecture=MSIL">
