@@ -1,4 +1,4 @@
-namespace TexturePackerLoader
+namespace PhoenixSample.PCL.TexturePacker
 {
     using Microsoft.Xna.Framework;
     using Microsoft.Xna.Framework.Graphics;

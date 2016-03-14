@@ -4,6 +4,7 @@ using Microsoft.Xna.Framework.Input;
 using PhoenixSample.PCL.Monogame.Aspects;
 using PhoenixSample.PCL.Monogame.Components;
 using PhoenixSample.PCL.Systems;
+using PhoenixSample.PCL.TexturePacker;
 using PhoenixSystem.Engine.Channel;
 using PhoenixSystem.Engine.Collections;
 using PhoenixSystem.Engine.Entity;
@@ -20,11 +21,14 @@ namespace PhoenixSample.PCL
         SampleGameManager _gameManager;
         SpriteFont font;
         IChannelManager _channelManager;
-        public Game()
+        private IFileReader _fileReader;
+
+        public Game(IFileReader fileReader)
         {
             graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
             _channelManager = new ChannelManager();
+            _fileReader = fileReader;
             var entityManager = new EntityManager(_channelManager, new EntityPool());
             _gameManager = new SampleGameManager(new DefaultEntityAspectManager(_channelManager, entityManager), entityManager, _channelManager);
         }
@@ -52,18 +56,26 @@ namespace PhoenixSample.PCL
             spriteBatch = new SpriteBatch(GraphicsDevice);
 
             font = Content.Load<SpriteFont>("Status");
+            SpriteSheetLoader loader = new SpriteSheetLoader(Content, _fileReader);
+            var ss = loader.Load("fanatiblaster");
 
+            var frame = ss.Sprite(SpriteNames.Down_spritesheetforthegame_1_0);
             MovementSystem movementSystem = new MovementSystem(_channelManager, 25, new string[] { "default" });
             TextRenderSystem textRenderSystem = new TextRenderSystem(spriteBatch, _channelManager, 100, "default");
+            TextureRenderSystem textureRenderSystem = new TextureRenderSystem(spriteBatch, _channelManager, 101, "default");
             _gameManager.AddSystem(textRenderSystem);
             _gameManager.AddSystem(movementSystem);
+            _gameManager.AddSystem(textureRenderSystem);
 
             var te = _gameManager.EntityManager.Get("text", new string[] { "default" });
             te.CreateTextRenderEntity("Some Text", Color.Black, new Vector2(100, 100), 5, 1.0f, font);
             var teMove = _gameManager.EntityManager.Get("text2", new string[] { "default" });
             teMove.CreateTextRenderEntity("I'm Moving!", Color.Black, new Vector2(1, 1), 5, 1.0f, font).AddComponent(new VelocityComponent() { Direction = new Vector2(1, 1), Speed = new Vector2(15, 15) });
+            var teSprite = _gameManager.EntityManager.Get("sprite");
+            teSprite.MakeTextureRenderAspect(new Vector2(150, 150), frame.IsRotated, frame.Origin, frame.SourceRectangle, frame.Texture, SpriteEffects.None, Color.White, 1.0f, 0.0f);
             _gameManager.AddEntity(te);
             _gameManager.AddEntity(teMove);
+            _gameManager.AddEntity(teSprite);
         }
 
         /// <summary>

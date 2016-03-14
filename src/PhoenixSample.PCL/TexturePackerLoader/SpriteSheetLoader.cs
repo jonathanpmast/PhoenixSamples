@@ -1,4 +1,4 @@
-﻿namespace TexturePackerLoader
+﻿namespace PhoenixSample.PCL.TexturePacker
 {
 	using System;
 	using System.Collections.Generic;

@@ -14,7 +14,7 @@ namespace PhoenixSample.Windows
         [STAThread]
         static void Main()
         {
-            using (var game = new Game())
+            using (var game = new Game(new FileReader()))
                 game.Run();
         }
     }
