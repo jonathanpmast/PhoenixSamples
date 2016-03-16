@@ -9,8 +9,9 @@ using System.Threading.Tasks;
 
 namespace PhoenixSample.PCL.Monogame.Aspects
 {
-    [AssociatedComponents(typeof(AnimationComponent),typeof(TextureRenderComponent))]
-    public class SpriteAnimationAspect :BaseAspect
+    [AssociatedComponents(typeof(AnimationComponent), typeof(TextureRenderComponent))]
+    public class SpriteAnimationAspect : BaseAspect
     {
+
     }
 }

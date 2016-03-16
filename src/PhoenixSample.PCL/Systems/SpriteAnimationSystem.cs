@@ -59,7 +59,6 @@ namespace PhoenixSample.PCL.Systems
                         textureComponent.SourceRect = sf.SourceRectangle;
                         textureComponent.Texture = sf.Texture;
                     }
-
                 }
             }
         }
