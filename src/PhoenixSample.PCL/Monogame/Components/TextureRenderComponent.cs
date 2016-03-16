@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PhoenixSample.PCL
+namespace PhoenixSample.PCL.Monogame.Components
 {
     public class TextureRenderComponent : BaseComponent
     {

@@ -34,19 +34,20 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Animation\AnimationCache.cs" />
     <Compile Include="IFileReader.cs" />
     <Compile Include="MonogameTickEvent.cs" />
     <Compile Include="Monogame\Aspects\MovementAspect.cs" />
-    <Compile Include="Monogame\Aspects\SpriteRenderAspect.cs" />
+    <Compile Include="Monogame\Aspects\SpriteAnimationAspect.cs" />
     <Compile Include="Monogame\Aspects\TextRenderAspect.cs" />
     <Compile Include="Monogame\Aspects\TextureRenderAspect.cs" />
+    <Compile Include="Monogame\Components\AnimationComponent.cs" />
     <Compile Include="Monogame\Components\ColorComponent.cs" />
     <Compile Include="Monogame\Components\PositionComponent.cs" />
     <Compile Include="Monogame\Components\RenderLayerComponent.cs" />
     <Compile Include="Monogame\Components\RotationComponent.cs" />
     <Compile Include="Monogame\Components\ScaleComponent.cs" />
     <Compile Include="Monogame\Components\SizeComponent.cs" />
-    <Compile Include="Monogame\Components\SpriteComponent.cs" />
     <Compile Include="Monogame\Components\SpriteFontComponent.cs" />
     <Compile Include="Monogame\Components\StringComponent.cs" />
     <Compile Include="Game.cs" />
@@ -56,7 +57,7 @@
     <Compile Include="SampleGameManager.cs" />
     <Compile Include="SpriteNames.cs" />
     <Compile Include="Systems\MovementSystem.cs" />
-    <Compile Include="Systems\SpriteRenderSystem.cs" />
+    <Compile Include="Systems\SpriteAnimationSystem.cs" />
     <Compile Include="Systems\TextRenderSystem.cs" />
     <Compile Include="Systems\TextureRenderSystem.cs" />
     <Compile Include="TexturePackerLoader\SpriteFrame.cs" />
