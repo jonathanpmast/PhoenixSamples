@@ -1,16 +1,17 @@
 ﻿namespace PhoenixSample.PCL.TexturePacker
 {
-	using System;
-	using System.Collections.Generic;
-	using System.IO;
-	using System.Linq;
+    using System;
+    using System.Collections.Generic;
+    using System.IO;
+    using System.Linq;
 
-	using Microsoft.Xna.Framework;
-	using Microsoft.Xna.Framework.Content;
-	using Microsoft.Xna.Framework.Graphics;
-	using PhoenixSample.PCL;
-
-	public class SpriteSheetLoader
+    using Microsoft.Xna.Framework;
+    using Microsoft.Xna.Framework.Content;
+    using Microsoft.Xna.Framework.Graphics;
+    using PhoenixSample.PCL;
+    using PhoenixSystem.Monogame;
+    using PhoenixSystem.Monogame.Render.Sprite;
+    public class SpriteSheetLoader
 	{
 		private readonly ContentManager contentManager;
 		private readonly IFileReader fileReader;
@@ -72,7 +73,7 @@
 					float.Parse(cols[9]));
 				var sprite = new SpriteFrame(texture, sourceRectangle, size, pivotPoint, isRotated);
 
-				sheet.Add(name, sprite);
+				sheet.SpriteList.Add(name, sprite);
 			}
 
 			return sheet;

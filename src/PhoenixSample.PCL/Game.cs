@@ -1,14 +1,15 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
-using PhoenixSample.PCL.Animation;
-using PhoenixSample.PCL.Monogame.Aspects;
-using PhoenixSample.PCL.Monogame.Components;
-using PhoenixSample.PCL.Systems;
 using PhoenixSample.PCL.TexturePacker;
 using PhoenixSystem.Engine.Channel;
 using PhoenixSystem.Engine.Collections;
 using PhoenixSystem.Engine.Entity;
+using PhoenixSystem.Monogame;
+using PhoenixSystem.Monogame.Aspects;
+using PhoenixSystem.Monogame.Components;
+using PhoenixSystem.Monogame.Render;
+using PhoenixSystem.Monogame.Systems;
 
 namespace PhoenixSample.PCL
 {
@@ -26,6 +27,7 @@ namespace PhoenixSample.PCL
 
         public Game(IFileReader fileReader)
         {
+            
             graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
             _channelManager = new ChannelManager();
@@ -53,6 +55,8 @@ namespace PhoenixSample.PCL
         /// </summary>
         protected override void LoadContent()
         {
+            
+
             // Create a new SpriteBatch, which can be used to draw textures.
             spriteBatch = new SpriteBatch(GraphicsDevice);
 
@@ -60,7 +64,7 @@ namespace PhoenixSample.PCL
             SpriteSheetLoader loader = new SpriteSheetLoader(Content, _fileReader);
             var ss = loader.Load("fanatiblaster");
 
-            var frame = ss.Sprite(SpriteNames.Down_spritesheetforthegame_1_0);
+            var frame = ss.SpriteList[SpriteNames.Down_spritesheetforthegame_1_0];
 
             var animationCache = new AnimationCache(ss);
             animationCache.Animations.Add("down",new string[] {
